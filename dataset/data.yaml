@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['mask', 'no-mask']
+
+roboflow:
+  workspace: danisenterprise
+  project: mask-wearing-1o20e
+  version: 1
+  license: Public Domain
+  url: https://universe.roboflow.com/danisenterprise/mask-wearing-1o20e/dataset/1
