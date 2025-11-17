@@ -3,8 +3,8 @@ from ultralytics import YOLO
 import os
 
 # Load your trained model
-model = YOLO("yolov8n.pt")  # or yolov8n.pt if using pretrained
-# model = YOLO("mask_detection_yolo.pt")  # or yolov8n.pt if using pretrained
+# model = YOLO("yolov8n.pt")  # or yolov8n.pt if using pretrained
+model = YOLO("mask_detection_yolo.pt")  # or yolov8n.pt if using pretrained
 
 
 # Create output folder if not exists
@@ -66,7 +66,7 @@ def run_on_video(source=0):  # 0 for webcam, or path to video file
 # run_on_image("test2.jpg")
 
 # Video file
-# run_on_video("test_video.mp4")
+run_on_video("input.mp4")
 
 # Webcam
-run_on_video(0)
+# run_on_video(0)
